@@ -7,4 +7,28 @@ GET {{domain}}/
 GET {{domain}}/collections
 
 ###
+GET {{domain}}/questions
 
+### Ask a question
+POST {{domain}}/ask
+Content-Type: application/json
+
+{
+    "question": "How many projects are there in the organization?"
+}
+
+### Generate SQL
+POST {{domain}}/generate-sql
+Content-Type: application/json
+
+{
+    "question": "How many projects are there in the organization?"
+}
+
+### Run SQL Query
+POST {{domain}}/run-sql
+Content-Type: application/json
+
+{
+    "sql": "SELECT COUNT(*) AS total_projects \nFROM analytics.PLATINUM_ORGANIZATION_DASHBOARD.PROJECTS limit 10"
+}

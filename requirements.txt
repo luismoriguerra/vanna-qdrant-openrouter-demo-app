@@ -10,3 +10,5 @@ qdrant-client
 vanna
 openai
 postgres
+snowflake-connector-python
+fastembed
