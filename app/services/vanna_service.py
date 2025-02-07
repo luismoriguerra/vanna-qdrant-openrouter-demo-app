@@ -27,5 +27,14 @@ class VannaService(Qdrant_VectorStore, OpenAI_Chat):
     
     def execute_sql(self, sql: str) -> pd.DataFrame:
         return self.run_sql(sql=sql)
+    
+    def get_training_data(self) -> pd.DataFrame:
+        return super().get_training_data()
+    
+    def remove_training_data(self, id: str):
+        return super().remove_training_data(id=id)
+    
+    def train(self, question: str, sql: str, ddl: str):
+        return super().train(question=question, sql=sql, ddl=ddl)
 
 vanna_service = VannaService() 

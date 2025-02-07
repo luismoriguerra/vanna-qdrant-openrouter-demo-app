@@ -1,0 +1,2 @@
+https://vanna.ai/docs/base/#vanna.base.base.VannaBase.submit_prompt
+
