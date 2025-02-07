@@ -1,0 +1,12 @@
+# Web Server
+gunicorn
+
+# Web Framework (assuming Flask since it's a common choice with Gunicorn)
+flask
+
+# Production Dependencies
+python-dotenv
+qdrant-client
+vanna
+openai
+postgres
