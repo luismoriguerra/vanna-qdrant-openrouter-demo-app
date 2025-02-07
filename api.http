@@ -9,14 +9,6 @@ GET {{domain}}/api/collections
 ###
 GET {{domain}}/api/questions
 
-### Ask a question
-# POST {{domain}}/api/ask
-# Content-Type: application/json
-
-# {
-#     "question": "How many projects are there in the organization?"
-# }
-
 ### Generate SQL
 POST {{domain}}/api/generate-sql
 Content-Type: application/json
@@ -39,9 +31,6 @@ GET {{domain}}/api/training-data
 ### Remove All Training Data
 DELETE {{domain}}/api/remove-all-training-data
 
-### Add Training Data
-POST {{domain}}/api/add-training-data
-Content-Type: application/json
 
 ### 
 ### Add Training Data
