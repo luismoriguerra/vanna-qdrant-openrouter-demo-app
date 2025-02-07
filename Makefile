@@ -14,7 +14,7 @@ clean:
 
 # Development server
 dev:
-	gunicorn main:app
+	gunicorn app.main:app
 
 deploy:
 	railway up --service $(PROJECT_NAME) --ci

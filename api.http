@@ -4,13 +4,13 @@
 GET {{domain}}/
 
 ###
-GET {{domain}}/collections
+GET {{domain}}/api/collections
 
 ###
-GET {{domain}}/questions
+GET {{domain}}/api/questions
 
 ### Ask a question
-POST {{domain}}/ask
+POST {{domain}}/api/ask
 Content-Type: application/json
 
 {
@@ -18,7 +18,7 @@ Content-Type: application/json
 }
 
 ### Generate SQL
-POST {{domain}}/generate-sql
+POST {{domain}}/api/generate-sql
 Content-Type: application/json
 
 {
@@ -26,7 +26,7 @@ Content-Type: application/json
 }
 
 ### Run SQL Query
-POST {{domain}}/run-sql
+POST {{domain}}/api/run-sql
 Content-Type: application/json
 
 {
