@@ -1,0 +1,1 @@
+https://vanna.ai/docs/base/#vanna.base.base.VannaBase.generate_questions
