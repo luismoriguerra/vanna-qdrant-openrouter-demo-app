@@ -1,1 +1,3 @@
-https://github.com/vanna-ai/vanna/pull/539
+https://openrouter.ai/docs/quickstart
+
+https://openrouter.ai/nousresearch/hermes-2-pro-llama-3-8b

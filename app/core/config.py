@@ -27,4 +27,7 @@ class Config:
     CLOUDFLARE_API_GATEWAY_TOKEN = os.getenv("CLOUDFLARE_API_GATEWAY_TOKEN") or exit("CLOUDFLARE_API_GATEWAY_TOKEN environment variable not set")
     CLOUDFLARE_ACCOUNT_ID = os.getenv("CLOUDFLARE_ACCOUNT_ID") or exit("CLOUDFLARE_ACCOUNT_ID environment variable not set")
 
+    # OpenRouter Configuration
+    OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY") or exit("OPENROUTER_API_KEY environment variable not set")
+
 config = Config() 

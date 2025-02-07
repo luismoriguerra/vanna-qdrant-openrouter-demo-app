@@ -3,12 +3,12 @@ from vanna.qdrant import Qdrant_VectorStore
 from app.core.config import config
 from app.core.database import qdrant_client
 import pandas as pd
-from app.services.openai_service import openai_client, openai_config
+from app.services.openrouter_service import openrouter_client, openrouter_config
 
 class VannaService(Qdrant_VectorStore, OpenAI_Chat):
     def __init__(self):
         Qdrant_VectorStore.__init__(self, config={'client': qdrant_client})
-        OpenAI_Chat.__init__(self, client=openai_client, config=openai_config)
+        OpenAI_Chat.__init__(self, client=openrouter_client, config=openrouter_config)
         self._connect_to_snowflake()
 
     def _connect_to_snowflake(self):
