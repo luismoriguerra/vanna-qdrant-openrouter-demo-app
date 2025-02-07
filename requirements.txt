@@ -12,3 +12,4 @@ openai
 postgres
 snowflake-connector-python
 fastembed
+openai
